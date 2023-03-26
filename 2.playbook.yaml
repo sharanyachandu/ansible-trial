@@ -1,6 +1,7 @@
 - hosts: dev
   tasks:
     - shell: df -h
-    - debug: var=ps.stdout_lines
+      register: x
+    - debug: var=x.stdout_lines
 
   
