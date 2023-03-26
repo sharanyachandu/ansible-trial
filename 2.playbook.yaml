@@ -1,4 +1,5 @@
 - hosts: dev
   tasks:
     - shell: df -h
+    ansible.builtin.debug:
   
