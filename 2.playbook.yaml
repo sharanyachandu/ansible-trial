@@ -1,0 +1,6 @@
+- name: defining
+  hosts: dev
+  tasks:
+   - name: describing dev 
+     - shell: df -h
+  
