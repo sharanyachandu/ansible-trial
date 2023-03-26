@@ -48,7 +48,7 @@ How do I know, what all are the facts that are collected by ANSIBLE ?
 
 * Ansible uses a module called as setup using that we can check the collected facts 
 
-    $ ansible -i inventory all -m setup 
+    $ ansible -i inventory all -e ansible_user=userName -e ansible_password=password -m setup 
 
 Block and Rescue :
 Block is nothing but a group of tasks; Rescue will only be executed if any of the tasks in the block of tasks fail. 
