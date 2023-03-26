@@ -1,15 +1,34 @@
 - name: play1
   hosts: all
   tasks:
-   -name: print hello from play1 of task1
-   ansible.builtin.debug:
-   msg:hello from task 1
-   -name: print bye from play1 of task 1
+   - name: print hello from play1 of task1
+    ansible.builtin.debug:
+    msg:hello from task 1
+   - name: print bye from play1 of task 1
 
 - name:play2
   hosts:prod
-  tasks
-   -name: printhello from play2 of task2
-   ansible.builtin.debug:
-   msg:hello from task 2
-   -name: print bye from from play1o of task 2
+  tasks:
+   - name: printhello from play2 of task2
+     ansible.builtin.debug:
+     msg:hello from task 2
+   - name: print bye from from play1o of task 2
+
+
+#    - name: Play1 
+#   hosts: all    # Mention the name of the inventory group that you want this to be running against 
+#   tasks:
+#     - name: Print Hello from play1 of task1 
+#       ansible.builtin.debug:
+#         msg: Hello from task1 of play1 
+
+#     - name: Print Hello from play1 of task2 
+#       ansible.builtin.debug:
+#         msg: Hello from task2 of play1  
+
+# - name: Play2 
+#   hosts: dev
+#   tasks:
+#     - name: Print Hello from play2 of task1 
+#       ansible.builtin.debug:
+#         msg: I am task1 from play2 
