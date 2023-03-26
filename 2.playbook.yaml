@@ -1,5 +1,6 @@
 - hosts: dev
   tasks:
     - shell: df -h
-    ansible.builtin.debug:
+    - debug: var=ps.stdout_lines
+
   
