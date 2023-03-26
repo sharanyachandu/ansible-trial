@@ -4,7 +4,7 @@
    -name: print hello from play1 of task1
    ansible.builtin.debug:
    msg:hello from task 1
-   -name:print bye from play1 of task 1
+   -name: print bye from play1 of task 1
 
 - name:play2
   hosts:prod
@@ -12,4 +12,4 @@
    -name: printhello from play2 of task2
    ansible.builtin.debug:
    msg:hello from task 2
-   -name:print bye from from play1o of task 2
+   -name: print bye from from play1o of task 2
