@@ -1,6 +1,5 @@
-- name: defining
-  hosts: dev
+- hosts: all
+  gather_facts: no
   tasks:
-   - name: describing dev 
-     - shell: df -h
+    - shell: df -h
   
