@@ -1,11 +1,11 @@
-- name: Demo on privilage escalation
-  hosts: all
-  become: yes
-  tasks:
-  - name: check the user id
-    ansible.builtin.shell: id
-      register: OUT
+# - name: Demo on privilage escalation
+#   hosts: all
+#   become: yes
+#   tasks:
+#   - name: check the user id
+#     ansible.builtin.shell: id
+#       register: OUT
 
-  - name: printing
-    ansible.builtin.debug:
-      msg: "{{OUT}}"  
+#   - name: printing
+#     ansible.builtin.debug:
+#       msg: "{{OUT}}"  
