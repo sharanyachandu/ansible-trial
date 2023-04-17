@@ -52,3 +52,7 @@ How do I know, what all are the facts that are collected by ANSIBLE ?
 
 Block and Rescue :
 Block is nothing but a group of tasks; Rescue will only be executed if any of the tasks in the block of tasks fail. 
+
+git branch branchname
+git checkout branchname  ##checkout for new branch
+git checkout -b branchname  ##creating and checkout for new branch 
