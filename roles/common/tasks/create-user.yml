@@ -1,0 +1,12 @@
+- name: Creating a Roboshop User Account 
+  ansible.builtin.user:
+    name: "{{APPUSER}}" 
+    comment: Roboshop User Account
+  register: APPUSERINFO  
+
+- name: Installing boto3 and botocore
+  ansible.builtin.pip:
+    name:
+      - botocore
+      - boto3 
+    executable: pip3
